@@ -1,0 +1,5 @@
+name: python_api_server
+dependencies:
+  - pip: 
+    - fastapi
+    - uvicorn
