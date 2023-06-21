@@ -54,20 +54,20 @@ async def generateReport(reportType: str, month: str, year: str):
       "tableContentDescription3" : "Receita de Vendas dos Produtos",
       "table3" : 
           [
-         { "Exercício": "2022", "Produto 1": 0.00,"Total":14030926.69},
-         { "Exercício": "2021", "Produto 2": 0.00,"Total":14030926.69}
+         { "Exercício": "2022", "Produto": "Produto 1","Total":14030926.69},
+         { "Exercício": "2021", "Produto": "Produto 1","Total":14030926.69}
          ],
       "tableContentDescription4" : "Receita de Vendas dos Servicos",
       "table4" : 
           [
-         { "Exercício": "2022", "Serviço 1": 0.00,"Total":14030926.69},
-         { "Exercício": "2021", "Serviço 2": 0.00,"Total":14030926.69}
+         { "Exercício": "2022", "Serviço": "Serviço 1","Total":14030926.69},
+         { "Exercício": "2021", "Serviço": "Serviço 2","Total":14030926.69}
          ],
       "tableContentDescription5" : "Receita de Vendas de Cursos (incluindo cursos in company)",
       "table5" : 
           [
-         { "Exercício": "2022", "Curso 1": 0.00,"Total":14030926.69},
-         { "Exercício": "2021", "Curso 2": 0.00,"Total":14030926.69}
+         { "Exercício": "2022", "Curso": "Curso 1","Total":14030926.69},
+         { "Exercício": "2021", "Curso": "Curso 2","Total":14030926.69}
          ],
       "tableContentDescription6" : "Despesas de Juros/Multas",
       "table6" : 
@@ -78,11 +78,11 @@ async def generateReport(reportType: str, month: str, year: str):
       "observation": "Justificativa da variação: as despesas com pessoal de 2022 superaram as despesas de 2021 por ter sido um ano de mais contratação e com mais projetos, o que demandou mais horas extras, que contribuíu para aumentar a despesa.",
       "table200" : 
           [
-         { "CARGOS GERENCIAIS": "Diretor", "QUANTIDADE DE CARGOS": 1},
-         { "CARGOS GERENCIAIS": "Chefe", "QUANTIDADE DE CARGOS": 8},
-         { "CARGOS DE EXECUÇÃO": "Funcionários", "QUANTIDADE DE CARGOS": 34},
-         { "OUTROS CARGOS": "Gerentes de Projeto", "QUANTIDADE DE CARGOS": 16},
-         { "CARGOS TERCEIRIZADOS": "Funcionários dos setores de Limpeza e Segurança", "QUANTIDADE DE CARGOS": 10}
+         { "CARGO": "Diretor", "QUANTIDADE DE CARGOS": 1},
+         { "CARGO": "Chefe", "QUANTIDADE DE CARGOS": 8},
+         { "CARGO": "Funcionários", "QUANTIDADE DE CARGOS": 34},
+         { "CARGO": "Gerentes de Projeto", "QUANTIDADE DE CARGOS": 16},
+         { "CARGO": "Funcionários dos setores de Limpeza e Segurança", "QUANTIDADE DE CARGOS": 10}
          ],
     }
 
