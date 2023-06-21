@@ -36,53 +36,53 @@ async def generateReport(reportType: str, month: str, year: str):
     print('Report Type: ' + reportType + ' Month: ' + month + ' Year: ' + year)
 
     result = {
-      "title": "Relatório de Gestão 2022",
-      "subtitle": "SECRETARIA DE GESTÃO DE PESSOAS - COPAG",
-      "tableDescription1": "Detalhamento da despesa de pessoal (ativo, inativo e pensionista), evolução dos últimos anos e justificativa para o aumento/diminuição:",
+      "title": "Relatório " + reportType + " do mês de " + str(month) + " do ano de " + str(year),
+      "subtitle": "Departamento Financeiro",
+      "tableDescription1": "Detalhamento das despesas financeiras, das despesas com pessoal, da receita de venda de produtos e serviços, receita de cursos e depespesas com juros e multas:",
       "tableContentDescription1" : "Despesas Financeiras",
       "table1" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Ano": "2022", "Despesa com tarifa bancária": 0.00,"Taxa de Cartão de Crédio VISA":0.00,"Taxa de Cartão de Crédio Mastercard":14030926.69,"Taxa de Cartão de Crédio ELO":14030926.69},
+         { "Ano": "2021", "Despesa com tarifa bancária": 0.00,"Taxa de Cartão de Crédio VISA":14030926.69,"Taxa de Cartão de Crédio Mastercard":14030926.69,"Taxa de Cartão de Crédio ELO":14030926.69}
          ],
       "tableContentDescription2" : "Despesas com Pessoal",
       "table2" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Exercício": "2022", "Salários": 0.00,"Assistência Saúde":0.00,"Auxílio Alimentação":14030926.69,"Tributos":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
+         { "Exercício": "2021", "Salários": 0.00,"Assistência Saúde":0.00,"Auxílio Alimentação":14030926.69,"Tributos":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
          ],
       "tableContentDescription3" : "Receita de Vendas dos Produtos",
       "table3" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Exercício": "2022", "Produto 1": 0.00,"Total":14030926.69},
+         { "Exercício": "2021", "Produto 2": 0.00,"Total":14030926.69}
          ],
       "tableContentDescription4" : "Receita de Vendas dos Servicos",
       "table4" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Exercício": "2022", "Serviço 1": 0.00,"Total":14030926.69},
+         { "Exercício": "2021", "Serviço 2": 0.00,"Total":14030926.69}
          ],
       "tableContentDescription5" : "Receita de Vendas de Cursos (incluindo cursos in company)",
       "table5" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Exercício": "2022", "Curso 1": 0.00,"Total":14030926.69},
+         { "Exercício": "2021", "Curso 2": 0.00,"Total":14030926.69}
          ],
       "tableContentDescription6" : "Despesas de Juros/Multas",
       "table6" : 
           [
-         { "Tipologias/Execicios": "2022", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69},
-         { "Tipologias/Execicios": "2021", "Vencimentos e Vantagens Fixas": 0.00,"Retribuicoes":0.00,"Gratificacoes":14030926.69,"Adicionais":14030926.69,"Indenizacoes":14030926.69,"Beneficios Assistenciais e previdenciarios":14030926.69, "Demais Despesas":14030926.69,"Despesas de Exercicios Anteriores":14030926.69,"Despesas Judiciais":14030926.69,"Totais":14030926.69}
+         { "Exercício": "2022", "Juros": 0.00,"Multas":0.00,"Total":0.00},
+         { "Exercício": "2021", "Juros": 0.00,"Multas":0.00,"Total":0.00}
          ],
-      "observation": "Justificativa variação: as despesas de 2022 superaram as despesas de 2021 por ter sido um ano eleitoral em que são pagas horas extras, jetons extraordinários e gratificação de juízes e de procuradores auxiliares. Além disso, houve reestruturação interna do Tribunal, com a criação de novos cargos em comissão (Resolução TRE-RS n. 390/2022), que contribuíram para aumentar a despesa.",
+      "observation": "Justificativa da variação: as despesas com pessoal de 2022 superaram as despesas de 2021 por ter sido um ano de mais contratação e com mais projetos, o que demandou mais horas extras, que contribuíu para aumentar a despesa.",
       "table200" : 
           [
-         { "CARGOS GERENCIAIS": "CJ4", "QUANTIDADE DE CARGOS GERENCIAIS": 1 ,"PERCENTUAL OCUPADO POR SERVIDORES EFETIVOS": "100,00%"},
-         { "CARGOS GERENCIAIS": "CJ3", "QUANTIDADE DE CARGOS GERENCIAIS": 8 ,"PERCENTUAL OCUPADO POR SERVIDORES EFETIVOS": "100,00%"},
-         { "CARGOS GERENCIAIS": "CJ2", "QUANTIDADE DE CARGOS GERENCIAIS": 34 ,"PERCENTUAL OCUPADO POR SERVIDORES EFETIVOS": "97,14% (34 efetivos e 1 comissionado)"},
-         { "CARGOS GERENCIAIS": "CJ1", "QUANTIDADE DE CARGOS GERENCIAIS": 16 ,"PERCENTUAL OCUPADO POR SERVIDORES EFETIVOS": "95,00% [19 efetivos (16 gerenciais, 3, não) e 1 comissionado]"},
-         { "CARGOS GERENCIAIS": "FC6", "QUANTIDADE DE CARGOS GERENCIAIS": 224 ,"PERCENTUAL OCUPADO POR SERVIDORES EFETIVOS": "97,82% (224 efetivos, 4 removidos e 1 vago)"}
+         { "CARGOS GERENCIAIS": "Diretor", "QUANTIDADE DE CARGOS": 1},
+         { "CARGOS GERENCIAIS": "Chefe", "QUANTIDADE DE CARGOS": 8},
+         { "CARGOS DE EXECUÇÃO": "Funcionários", "QUANTIDADE DE CARGOS": 34},
+         { "OUTROS CARGOS": "Gerentes de Projeto", "QUANTIDADE DE CARGOS": 16},
+         { "CARGOS TERCEIRIZADOS": "Funcionários dos setores de Limpeza e Segurança", "QUANTIDADE DE CARGOS": 10}
          ],
     }
 
