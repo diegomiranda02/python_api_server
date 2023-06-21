@@ -36,6 +36,6 @@ async def generateReport(reportType: str, month: str, year: str):
     print('Report Type: ' + reportType + ' Month: ' + month + ' Year: ' + year)
 
     x = {
-      "text": "A ficha funcional é o documento eletrônico que demonstra todas as ocorrências funcionais já registradas: investidura, movimentação e vacância de cargos e funções, averbação de tempo de serviço, auxílios, benefícios, dependentes, descontos, faltas, folgas e licenças, gratificações, substituições e vantagens pessoais."
+      "text": "Resposta da geração do relatório financeiro."
     }
     return Response(content=json.dumps(x), media_type="application/json")
